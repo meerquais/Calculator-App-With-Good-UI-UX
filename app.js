@@ -9,9 +9,12 @@ function result(){
     inputValue.value = output
 }
 
-
-
 function clearScreen() {
     var inputValue = document.getElementById("number")
     inputValue.value = " ";
+}
+
+function delScreen(){
+    var inputValue = document.getElementById("number")
+    inputValue.value = inputValue.value.slice(0,-1)
 }
