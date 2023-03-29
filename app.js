@@ -3,6 +3,8 @@ function setNumber(num){
     input.value += num
 }
 
+
+
 function result(){
     var inputValue = document.getElementById("number")
     var output = eval(inputValue.value)
