@@ -25,5 +25,8 @@ function clearScreen() {
 
 function delScreen(){
     var inputValue = document.getElementById("number")
-    inputValue.value = inputValue.value.slice(0,-1)
+    // inputValue.value = inputValue.value.slice(0,-1)
+    if (inputValue.value !== "Error") {
+        inputValue.value.slice(0,-1);
+      }
 }
