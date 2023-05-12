@@ -1,5 +1,10 @@
 function setNumber(num){
     var input = document.getElementById("number")
+    var operators = ["+", "-", "*", "/" , "%"];
+    var lastChar = input.value.slice(-1);
+  if (operators.includes(lastChar) && operators.includes(num)) {
+    return;
+  }
     input.value += num
 }
 
@@ -25,8 +30,7 @@ function clearScreen() {
 
 function delScreen(){
     var inputValue = document.getElementById("number")
-    // inputValue.value = inputValue.value.slice(0,-1)
     if (inputValue.value !== "Error") {
-        inputValue.value.slice(0,-1);
+        inputValue.value = inputValue.value.slice(0,-1);
       }
 }
